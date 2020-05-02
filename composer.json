@@ -1,0 +1,30 @@
+{
+    "name": "vinnygambiny/lightroom-sync",
+    "description": "Sync Lightroom album to Laravel Spatie Media Library",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "vinnygambiny",
+            "email": "vincent.drouin@netdigo.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "VinnyGambiny\\LightroomSync\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "VinnyGambiny\\LightroomSync\\LightroomSyncServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^7.4",
+        "laravel/framework": "^7.0",
+        "spatie/laravel-medialibrary": "^8.0.0"
+    }
+}
