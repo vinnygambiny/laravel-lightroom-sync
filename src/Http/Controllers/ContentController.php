@@ -62,6 +62,7 @@ class ContentController extends BaseController
             Storage::disk(config('lightroom-sync.chunks_disk'))->delete($path);
             Artisan::call('media-library:regenerate', [
                 '--ids' => $content->id,
+                '--force' => true,
             ]);
         }
 
